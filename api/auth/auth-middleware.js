@@ -1,15 +1,8 @@
-const express = require('express')
+async function protect(req, res, next) {
+    console.log('protecting')
+    next()
+}
 
-const router = express.Router()
-
-router.method('/register', async (req, res, next) => {
-     
-})
-router.method('/register', async (req, res, next) => {
-     
-})
-router.method('/register', async (req, res, next) => {
-     
-})
-
-module.exports = router
+module.exports = {
+    protect
+}
